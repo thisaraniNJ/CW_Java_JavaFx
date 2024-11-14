@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="699.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalfinalcw.AddingDetailsController">
+    <children>
+        <Label alignment="CENTER" layoutX="210.0" layoutY="22.0" prefHeight="58.0" prefWidth="532.0" text="TECH EXPO APPLICATION">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+            </font>
+        </Label>
+        <Label layoutX="328.0" layoutY="66.0" prefHeight="52.0" prefWidth="295.0" text="Adding Project Details">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="27.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="148.0" prefHeight="35.0" prefWidth="157.0" text="Project ID : " />
+        <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="199.0" prefHeight="35.0" prefWidth="158.0" text="Project Name : " />
+        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="253.0" prefHeight="35.0" prefWidth="123.0" text="Category : " />
+        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="310.0" prefHeight="35.0" prefWidth="123.0" text="Team Members : " />
+        <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="392.0" prefHeight="35.0" prefWidth="139.0" text="Brief Description : " />
+        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="469.0" prefHeight="35.0" prefWidth="123.0" text="Country : " />
+        <Label alignment="CENTER_RIGHT" layoutX="67.0" layoutY="530.0" prefHeight="35.0" prefWidth="113.0" text="Team Logo : " />
+        <Button fx:id="addProjectButton" layoutX="100.0" layoutY="607.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="186.0" text="Add Project Details">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="uploadImageButton" layoutX="202.0" layoutY="530.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="123.0" text="Upload Logo" />
+        <Button fx:id="deleteProjectButton" layoutX="659.0" layoutY="357.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="186.0" text="Delete Project">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="updateButton" layoutX="659.0" layoutY="410.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="186.0" text="Update Project">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="viewButton" layoutX="659.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="186.0" text="View Project Details">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="spotlightButton" layoutX="659.0" layoutY="513.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="186.0" text="Spotlight Showcase">
+            <font>
+                <Font name="Times New Roman Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button layoutX="769.0" layoutY="608.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="29.0" prefWidth="75.0" text="Exit">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <TextField fx:id="projectIdField" layoutX="202.0" layoutY="148.0" prefHeight="35.0" prefWidth="368.0" />
+        <TextField fx:id="projectNameField" layoutX="202.0" layoutY="199.0" prefHeight="35.0" prefWidth="368.0" />
+        <TextField fx:id="categoryField" layoutX="202.0" layoutY="253.0" prefHeight="35.0" prefWidth="368.0" />
+        <TextField fx:id="teamMembersField" layoutX="202.0" layoutY="310.0" prefHeight="35.0" prefWidth="368.0" />
+        <TextArea fx:id="briefDescriptionArea" layoutX="202.0" layoutY="371.0" prefHeight="78.0" prefWidth="368.0" />
+        <TextField fx:id="countryField" layoutX="202.0" layoutY="469.0" prefHeight="35.0" prefWidth="368.0" />
+        <Label alignment="CENTER" layoutX="659.0" layoutY="281.0" prefHeight="58.0" prefWidth="185.0" text="Other Features">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
